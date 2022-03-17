@@ -1,10 +1,30 @@
 import React from 'react';
 import { render } from '@testing-library/react';
 import Home from '../components/Home';
+import { screen } from '@testing-library/react';
 
 describe("home page", ()=> {
-    test('when loading true loading should be dispayed', () => {
+    
+    test('home page render', () => {
         render(<Home />)
+        const linkElement = screen.getByTestId("home");
+         expect(linkElement).toBeInTheDocument();
     });
+
+    test('text', () => {
+        render(<Home />)
+        const linkElement = screen.getByTestId("text");
+         expect(linkElement).toBeInTheDocument();
+    });
+
+    test('loading', () => {
+        render(<Home />)
+        const linkElement = screen.getByTestId("loading");
+         expect(linkElement).toBeInTheDocument();
+    });
+
+    
+
+ 
     
 })
