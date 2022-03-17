@@ -19,8 +19,4 @@ describe("home page", ()=> {
 
  
 
-    
-
- 
-    
 })
