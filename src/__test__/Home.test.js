@@ -17,11 +17,7 @@ describe("home page", ()=> {
          expect(linkElement).toBeInTheDocument();
     });
 
-    test('loading', () => {
-        render(<Home />)
-        const linkElement = screen.getByTestId("loading");
-         expect(linkElement).toBeInTheDocument();
-    });
+ 
 
     
 
