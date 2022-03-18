@@ -69,9 +69,9 @@ const Home = () => {
 
   return (
     <Container data-testid="home">
-      <h3 style={{ textAlign: "center" }} data-testid="text">Post Table</h3>
+      <h3 style={{ textAlign: "center" }}>Post Table</h3>
       {loading ? (
-        <Box style={{ textAlign: "center" }} data-testid="loading">
+        <Box style={{ textAlign: "center" }}>
           <CircularProgress size={25} />
           Loading new Post Data...
         </Box>
